@@ -5,7 +5,6 @@
   font-family: Arial;
 }
 .menu-container{
-
   display: flex;
   justify-content: center;
   background-color: #faebd7 ;
@@ -47,4 +46,6 @@
 .product-item{
   text-align: center;
   image-orientation:
+  padding: 20px 0;
+  flex-grow: 1;
 }
