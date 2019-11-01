@@ -1,0 +1,35 @@
+/* GLOBAL STYLE (Targets Everyting)*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+}
+
+
+}
+.header-container{
+  display: flex;
+
+  padding: 70px 0;
+}
+.left-item{
+  flex-grow: 1;
+}
+.right-item{
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+}
+
+.product-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-item{
+  text-align: center;
+  image-orientation:
+  padding: 20px 0;
+  flex-grow: 1;
+}
