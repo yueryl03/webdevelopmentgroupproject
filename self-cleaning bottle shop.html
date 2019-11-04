@@ -6,11 +6,198 @@
   <meta charset="utf-8">
 <!-- Link to  stylesheet -->
   <link rel="stylesheet" href="self-cleaning bottle shop.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
 
   <div class="menu-container">
-    <div class="menu-item"><a href="self-cleaning bottle.html">ABOUT</a></div>
-    <div class="menu-item"><a href="self-cleaning bottle technology.html">TECHNOLOGY</a></div>
-    <div class="menu-item"><a href="self-cleaning bottle shop.html">SHOP</a></div>
+    <div class="menu-item"><a href="self-cleaning bottle.html"><li style="color:black;">ABOUT</li></a></div>
+    <div class="menu-item"><a href="self-cleaning bottle technology.html"><li style="color:black;">TECHNOLOGY</li></a></div>
+    <div class="menu-item"><a href="self-cleaning bottle shop.html"><li style="color:black;">SHOP</li></a></div>
     </div>
+  <div class="header-container">
+    <div class="left-item">
+
+
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="https://cdn11.bigcommerce.com/s-b0j8iiyjpx/products/112/images/642/LARQ_Bottle_Product-1_17oz_MB__25321.1571652469.1280.1280.jpg?c=2" style="width:550px;height:600px;">
+  <div class="text"><li style="color:#000080;">Monaco Blue</li></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="https://cdn11.bigcommerce.com/s-b0j8iiyjpx/products/112/images/641/LARQ_Bottle_Product-1_17oz_OB__43346.1571652469.1280.1280.jpg?c=2"style="width:550px;height:600px;">
+  <div class="text"><li style="color:black;">Obsidian Black</li></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="https://cdn11.bigcommerce.com/s-b0j8iiyjpx/products/112/images/640/LARQ_Bottle_Product-1_17oz_SM__78927.1571652469.1280.1280.jpg?c=2"style="width:550px;height:600px;">
+  <div class="text"><li style="color:#afeeee;">Seaside Mint</li></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="https://cdn11.bigcommerce.com/s-b0j8iiyjpx/products/112/images/635/LARQ_Bottle_Product-1_17oz_GW__08325.1571652468.1280.1280.jpg?c=2"style="width:550px;height:600px;">
+  <div class="text">Granite White</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="https://cdn11.bigcommerce.com/s-b0j8iiyjpx/products/112/images/639/LARQ_Bottle_Product-1_17oz_HP__92799.1571652469.1280.1280.jpg?c=2"style="width:550px;height:600px;">
+  <div class="text"><li style="color:#ffc0cb;">Himalayan Pink</li></div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<div class="right-item">
+  <h1>LARQ Bottle</h1>
+<p>The LARQ Bottle is the world's first self-cleaning water bottle and water purification system. It uses UV-C LED light to eliminate up to 99.9999% of bio-contaminants from your water and bottle.</p>
+<div class="header-containersizeandbuy">
+  <div class="left-itemsize">
+  <h2>Size</h2>
+  <button class="button">17 oz</button>
+  <button class="button">25 oz</button>
+</div>
+  <div class="right-itembuy">
+  <h3> $95.00</h3>
+  <button class="buttonb">buy</button>
+</div>
+</div>
+
+</div>
+</div>
+<div class="symbolandtexts-container">
+  <div class="symbolandtexts-item1">
+<p> Pure water in 60 seconds </p>
+<img src="https://cdn3.iconfinder.com/data/icons/hand-drawn-common-icons/100/sketch_drawn_handdrawn_sketchy-36-512.png" style="width:100px;height:100px;">
+<p>Eradicate harmful & odor-</p>
+<p>causing germs at the touch of a</p>
+<p>button</p>
+
+  </div>
+  <div class="symbolandtexts-item2">
+<p> Self-cleanin </p>
+<img src="https://cdn4.iconfinder.com/data/icons/planner-basic/64/cleaning-duster-512.png" style="width:100px;height:100px;">
+<p>Intelligently turns on every 2</p>
+<p>hours to keep your water and</p>
+<p>bottle fresh</p>
+
+  </div>
+
+  <div class="symbolandtexts-item3">
+<p> Adventure ready </p>
+<img src="https://image.flaticon.com/icons/png/512/1079/1079173.png" style="width:170px;height:100px;">
+  <p>Purify water on-the-go – </p>
+  <p>whenever, wherever</p>
+
+
+  </div>
+  <div class="product-container">
+    <div class="product-item">
+  <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto,w_auto/v1570725685/assets/spa/product/bottle/carousel/Carousel_MBlue_570.jpg" style="width:300px;height:300px;">
+    </div>
+    <div class="product-item">
+  <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto,w_auto/v1570725685/assets/spa/product/bottle/carousel/Carousel_OBlack_570.jpg" style="width:300px;height:300px;">
+    </div>
+    <div class="product-item">
+  <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto,w_auto/v1570725685/assets/spa/product/bottle/carousel/Carousel_SMint_570.jpg" style="width:300px;height:300px;">
+    </div>
+    <div class="product-item">
+  <img src="https://res.cloudinary.com/larq/image/upload/q_auto,f_auto,w_auto/v1570725685/assets/spa/product/bottle/carousel/Carousel_GWhite_570.jpg" style="width:300px;height:300px;">
+    </div>
+
+
+  <h1 style="text-align:center;">In numbers</h1>
+
+  <div class="header-container" id="header-container">
+      <div class="left-item">
+          <img src="https://res.cloudinary.com/larq/image/upload/v1570725992/assets/spa/diagram/LARQ_Bottle_Diagram_DW-17oz.svg" style="width:300px; height:600px;">
+          <h2 style="text-align:center;">17 oz (500 ml)</h2>
+
+          <p style="text-align:center;">Designed to be part of your daily carry–from desk to dinner, or pilates to rrands. Easily fits into your purse, backpack or gym bag.</p>
+
+          <h3 style="text-align:center;">5-7+</h3>
+          <p style="text-align:center;">Refills per day</p>
+
+          <h4 style="text-align:center;">Weight</h4>
+          <p style="text-align:center;">13.5 oz (0.38 kg)</p>
+  </div>
+        <div class="right-item">
+          <img src="https://res.cloudinary.com/larq/image/upload/v1570725992/assets/spa/diagram/LARQ_Bottle_Diagram_DW-25oz.svg"style="width:300px; height:600px;">
+          <h2 style="text-align:center;">25 oz (740 ml)</h2>
+
+          <p style="text-align:center;">Bigger means more water. Hit your hydration goals faster with this big guy. Plus, it'll still fit into most cupholders (we made sure of it).</p>
+
+          <h3 style="text-align:center;">2-5+</h3>
+          <p style="text-align:center;">Refills per day</p>
+          <h4 style="text-align:center;">Weight</h4>
+          <p style="text-align:center;">17 oz (0.50 kg)</p>
+        </div>
+      </div>
