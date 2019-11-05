@@ -1,7 +1,4 @@
-*{
-  background-color: black;
 
-}
 
 .timmy{
 color: #0ff7cd
@@ -18,5 +15,13 @@ color: #0ff7cd
   flex-grow: 1;
   text-align: center;
   padding: 20px;
+  background-color: black;
+}
+
+.contact {
+    background-color:#34e8eb;
+}
+
+.hydro-body {
   background-color: black;
 }
