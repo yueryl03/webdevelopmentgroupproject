@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0 auto; /* Center website */
+  max-width: 800px; /* Max width */
+  padding: 20px;
+  background-image: url(https://media.giphy.com/media/xUA7aPhCAs5QRvMMJa/giphy.gif);
+  background-size: 100%;
+ color:white;
+}
+
+.header-container{
+  display: flex;
+
+  padding: 70px 0;
+}
+.left-item{
+  flex-grow: 1;
+}
+.right-item{
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+}
