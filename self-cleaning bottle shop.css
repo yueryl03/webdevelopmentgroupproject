@@ -205,7 +205,7 @@ img {vertical-align: middle;}
   color: blue;
 }
 .buttonb{
-  background-color: #b0e0e6;
+  background-color: #317f87;
   border: none;
   color: white;
   padding: 15px 25px;
@@ -215,7 +215,7 @@ img {vertical-align: middle;}
   width: 25%;
 }
 .buttonb:hover {
-  background-color: #317f87;
+  background-color: #b0e0e6;
   color: white;
 }
 header-containersizeandbuy{
